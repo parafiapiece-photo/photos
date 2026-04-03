@@ -31,13 +31,11 @@
    "oltarz11.webp",
    "zdjecie 1.webp"
   ]
-}
-
-
-  {
+    },
+    {
     "id": "boze_cialo",
-    "title": "Boże Ciało 2022",
-    "date": "2026-04-02",
+    "title": "Cialo",
+    "date": "2026-04-03",
     "folder": "2022/boze_cialo",
     "coverImage": "287409008_1182107395855978_2701785418780773428_n.webp",
     "photos": [
@@ -56,8 +54,8 @@
   },
   {
     "id": "wielkanoc",
-    "title": "Wielkanoc 2021",
-    "date": "2026-04-02",
+    "title": "Wielkanoc",
+    "date": "2026-04-03",
     "folder": "2021/wielkanoc",
     "coverImage": "1.webp",
     "photos": [
@@ -81,8 +79,8 @@
   },
   {
     "id": "triduum",
-    "title": "Triduum Paschalne 2021",
-    "date": "2026-04-02",
+    "title": "Triduum",
+    "date": "2026-04-03",
     "folder": "2021/triduum",
     "coverImage": "IMG_20210403_143415_resized_20210403_032728289.webp",
     "photos": [
@@ -113,8 +111,8 @@
   },
   {
     "id": "boze_narodzenie",
-    "title": "Boże Narodzenie 2021",
-    "date": "2026-04-02",
+    "title": "Narodzenie",
+    "date": "2026-04-03",
     "folder": "2021/boze_narodzenie",
     "coverImage": "IMG_20211231_170448.webp",
     "photos": [
@@ -134,8 +132,8 @@
   },
   {
     "id": "wielkanoc",
-    "title": "Wielkanoc 2020",
-    "date": "2026-04-02",
+    "title": "Wielkanoc",
+    "date": "2026-04-03",
     "folder": "2020/wielkanoc",
     "coverImage": "IMG_20200412_125240.webp",
     "photos": [
@@ -157,8 +155,8 @@
   },
   {
     "id": "turniej_ministrantow",
-    "title": "Turniej Ministrantow 2020",
-    "date": "2026-04-02",
+    "title": "Ministrantow",
+    "date": "2026-04-03",
     "folder": "2020/turniej_ministrantow",
     "coverImage": "1.webp",
     "photos": [
@@ -175,8 +173,8 @@
   },
   {
     "id": "triduum_paschalne",
-    "title": "Triduum Paschalne 2020",
-    "date": "2026-04-02",
+    "title": "Paschalne",
+    "date": "2026-04-03",
     "folder": "2020/triduum_paschalne",
     "coverImage": "IMG_20200411_171849.webp",
     "photos": [
@@ -198,8 +196,8 @@
   },
   {
     "id": "strojenie_choinek",
-    "title": "Strojenie Choinek 2020",
-    "date": "2026-04-02",
+    "title": "Choinek",
+    "date": "2026-04-03",
     "folder": "2020/strojenie_choinek",
     "coverImage": "1.webp",
     "photos": [
@@ -216,8 +214,8 @@
   },
   {
     "id": "roraty",
-    "title": "Roraty 2020",
-    "date": "2026-04-02",
+    "title": "Roraty",
+    "date": "2026-04-03",
     "folder": "2020/roraty",
     "coverImage": "1.webp",
     "photos": [
@@ -235,10 +233,10 @@
     ]
   },
   {
-    "id": "pilegrzymka do wiela",
-    "title": "Pielgrzymka do wiela 2020",
-    "date": "2026-04-02",
-    "folder": "2020/pilegrzymka do wiela",
+    "id": "pielgrzymka_do_wiela",
+    "title": "Wiela",
+    "date": "2026-04-03",
+    "folder": "2020/pielgrzymka_do_wiela",
     "coverImage": "1.webp",
     "photos": [
       "1.webp",
@@ -254,8 +252,8 @@
   },
   {
     "id": "oplatek_roze_rozancowe",
-    "title": "Opłatek Róż Rozancowych 2020",
-    "date": "2026-04-02",
+    "title": "Rozancowe",
+    "date": "2026-04-03",
     "folder": "2020/oplatek_roze_rozancowe",
     "coverImage": "1.webp",
     "photos": [
@@ -276,8 +274,8 @@
   },
   {
     "id": "nowi_ministranci",
-    "title": "Przyjęcie nowych ministrantów 2020",
-    "date": "2026-04-02",
+    "title": "Ministranci",
+    "date": "2026-04-03",
     "folder": "2020/nowi_ministranci",
     "coverImage": "68633827_1387444484737566_1067586044943138816_n.webp",
     "photos": [
@@ -299,8 +297,8 @@
   },
   {
     "id": "misje",
-    "title": "Misje 2020",
-    "date": "2026-04-02",
+    "title": "Misje",
+    "date": "2026-04-03",
     "folder": "2020/misje",
     "coverImage": "DSC03159.webp",
     "photos": [
@@ -377,8 +375,8 @@
   },
   {
     "id": "dozynki",
-    "title": "Dożynki 2020",
-    "date": "2026-04-02",
+    "title": "Dozynki",
+    "date": "2026-04-03",
     "folder": "2020/dozynki",
     "coverImage": "1 (1).webp",
     "photos": [
@@ -424,8 +422,8 @@
   },
   {
     "id": "roraty",
-    "title": "Roraty 2019",
-    "date": "2026-04-02",
+    "title": "Roraty",
+    "date": "2026-04-03",
     "folder": "2019/roraty",
     "coverImage": "2.webp",
     "photos": [
@@ -442,10 +440,10 @@
     ]
   },
   {
-    "id": "pogrzeb ksiedza szumiato",
-    "title": "Pogrzeb ksiedza Szumiato",
-    "date": "2026-04-02",
-    "folder": "2019/pogrzeb ksiedza szumiato",
+    "id": "pogrzeb_ksiedza_szumiato",
+    "title": "Szumiato",
+    "date": "2026-04-03",
+    "folder": "2019/pogrzeb_ksiedza_szumiato",
     "coverImage": "a.webp",
     "photos": [
       "a.webp",
@@ -477,10 +475,10 @@
     ]
   },
   {
-    "id": "mianowanie ministrantów",
-    "title": "Mianowanie ministrantów 2019",
-    "date": "2026-04-02",
-    "folder": "2019/mianowanie ministrantów",
+    "id": "mianowanie_ministrantow",
+    "title": "Ministrantow",
+    "date": "2026-04-03",
+    "folder": "2019/mianowanie_ministrantow",
     "coverImage": "1.webp",
     "photos": [
       "1.webp",
@@ -510,8 +508,8 @@
   },
   {
     "id": "festyn",
-    "title": "Festyn 2019",
-    "date": "2026-04-02",
+    "title": "Festyn",
+    "date": "2026-04-03",
     "folder": "2019/festyn",
     "coverImage": "Festyn 1.webp",
     "photos": [
@@ -530,8 +528,8 @@
   },
   {
     "id": "boze_cialo",
-    "title": "Boże Ciało 2019",
-    "date": "2026-04-02",
+    "title": "Cialo",
+    "date": "2026-04-03",
     "folder": "2019/boze_cialo",
     "coverImage": "boze cialo 2.webp",
     "photos": [
