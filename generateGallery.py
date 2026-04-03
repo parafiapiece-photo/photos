@@ -6,55 +6,70 @@ IMAGE_EXTENSIONS = ('.webp', '.jpg', '.jpeg', '.png')
 BASE_DIR = '.' 
 OUTPUT_FILE = 'galleries.json'
 
+def get_images_in_dir(directory):
+    if not os.path.exists(directory):
+        return []
+    images = [f for f in os.listdir(directory) if f.lower().endswith(IMAGE_EXTENSIONS)]
+    images.sort()
+    return images
+
 def generate_galleries():
     galleries = []
-    
-    # Pobieramy foldery lat i sortujemy malejąco
+    current_year = datetime.now().year
+
+    # 1. FOLDER SPECJALNY "KOSCIOL"
+    special_folder = 'kosciol'
+    if os.path.isdir(special_folder):
+        images = get_images_in_dir(special_folder)
+        if images:
+            galleries.append({
+                "id": "nasz-kosciol",
+                "title": f"Wnętrze kościoła {current_year}",
+                "date": f"{current_year}-01",
+                "folder": special_folder,
+                "coverImage": images[0],
+                "photos": images
+            })
+            print(f"Dodano folder specjalny: {special_folder}")
+
+    # 2. SKANOWANIE LAT
     years = [d for d in os.listdir(BASE_DIR) if d.isdigit() and len(d) == 4]
     years.sort(reverse=True)
 
     for year in years:
         year_path = os.path.join(BASE_DIR, year)
-        # Pobieramy wydarzenia w danym roku
         events = [d for d in os.listdir(year_path) if os.path.isdir(os.path.join(year_path, d))]
         events.sort(reverse=True)
 
         for event in events:
-            event_path = os.path.join(year, event)
-            full_path = os.path.join(BASE_DIR, event_path)
+            event_rel_path = os.path.join(year, event)
+            full_path = os.path.join(BASE_DIR, event_rel_path)
             
-            # Lista zdjęć
-            images = [f for f in os.listdir(full_path) if f.lower().endswith(IMAGE_EXTENSIONS)]
-            images.sort()
-
+            images = get_images_in_dir(full_path)
             if not images:
                 continue
 
-            # Logika daty i tytułu
-            try:
-                date_str = event.split('_')[0]
-                datetime.strptime(date_str, '%Y-%m-%d')
-            except ValueError:
-                date_str = datetime.fromtimestamp(os.path.getmtime(full_path)).strftime('%Y-%m-%d')
+            # Tytuł: Nazwa folderu + Rok (np. "Wielkanoc 2021")
+            clean_name = event.replace('-', ' ').replace('_', ' ').capitalize()
+            display_title = f"{clean_name} {year}"
+            
+            # Unikalne ID
+            unique_id = f"{year}-{event.replace('_', '-')}"
 
-            title = event.split('_')[-1].replace('-', ' ').replace('_', ' ').capitalize()
-
-            gallery = {
-                "id": event.replace('.', '-'),
-                "title": title,
-                "date": date_str,
-                "folder": event_path,
+            galleries.append({
+                "id": unique_id,
+                "title": display_title,
+                "date": f"{year}-01",
+                "folder": event_rel_path,
                 "coverImage": images[0],
                 "photos": images
-            }
-            
-            galleries.append(gallery)
-            print(f"Dodano: {year} -> {title} ({len(images)} zdjęć)")
+            })
+            print(f"Dodano: {display_title}")
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(galleries, f, indent=2, ensure_ascii=False)
-
-    print(f"\nSukces! Wygenerowano {len(galleries)} galerii w {OUTPUT_FILE}")
+    
+    print(f"\nGotowe! Wygenerowano {len(galleries)} galerii.")
 
 if __name__ == "__main__":
     generate_galleries()
