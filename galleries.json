@@ -36,8 +36,9 @@
     "title": "Triduum paschalne 2026",
     "date": "2026-01",
     "folder": "2026/triduum_paschalne",
-    "coverImage": "received_1258407576261930.jpeg",
+    "coverImage": "a.jpeg",
     "photos": [
+      "a.jpeg",
       "received_1258407576261930.jpeg",
       "received_1276125454297055.jpeg",
       "received_1447196780214633.jpeg",
@@ -48,7 +49,6 @@
       "received_1631644544802670.jpeg",
       "received_2024110071823321.jpeg",
       "received_2041612296783432.jpeg",
-      "received_2118032722352249.jpeg",
       "received_2174227796712447.jpeg",
       "received_2199226827514702.jpeg",
       "received_2370627806755817.jpeg",
@@ -56,7 +56,6 @@
       "received_2530316900772338.jpeg",
       "received_2867737433618035.jpeg",
       "received_3308762879293743.jpeg",
-      "received_3584674008337370.jpeg",
       "received_4898983683661762.jpeg"
     ]
   },
